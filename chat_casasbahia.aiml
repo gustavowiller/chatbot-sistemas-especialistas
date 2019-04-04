@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <!-- insert your AIML categories here -->
+
+
+
+<!-- ######################## 
+    Substituição de Palavras
+############################### -->
+
+
+
+
+<!-- ###########################
+    Resposta de Quem é Você ? 
+############################### -->
+<category>
+    <pattern>QUEM VOCÊ </pattern>
+    <template>Sou o chatbot das Casas Bahia. Em que posso ajudá-lo?</template>
+</category>
+
+
+
+<!-- ###########################
+    Identificação de padrões do usuário, para direcionar a base de conhecimentos do BOT.
+############################### -->
+
+<!-- Como pagar -->
+<category>
+    <pattern>* COMO * PAGAR * </pattern>
+    <template><srai>COMO PAGAR <star index="3" /></srai></template>
+</category>
+<category>
+    <pattern>COMO * PAGAR * </pattern>
+    <template><srai>COMO PAGAR <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>COMO * PAGAR </pattern>
+    <template><srai>COMO PAGAR</srai></template>
+</category>
+
+
+<!-- Juros e Taxas -->
+<category>
+<pattern>* JUROS *</pattern>
+    <template><srai>JUROS TAXAS</srai></template>
+</category>
+<category>
+    <pattern>* JUROS</pattern>
+    <template><srai>JUROS TAXAS</srai></template>
+</category>
+<category>
+    <pattern>* TAXAS</pattern>
+    <template><srai>JUROS TAXAS</srai></template>
+</category>
+<category>
+    <pattern>* TAXAS *</pattern>
+    <template><srai>JUROS TAXAS</srai></template>
+</category>
+
+
+<!-- Divida em Atraso -->
+<category>
+    <pattern>* PARCELA * ATRASO</pattern>
+    <template><srai>DIVIDA ATRASO</srai></template>
+</category>
+<category>
+    <pattern>* PARCELA * ATRASO *</pattern>
+    <template><srai>DIVIDA ATRASO</srai></template>
+</category>
+<category>
+    <pattern>* CARNÊ * ATRASO</pattern>
+    <template><srai>DIVIDA ATRASO</srai></template>
+</category>
+<category>
+    <pattern>* CARNÊ * ATRASO *</pattern>
+    <template><srai>DIVIDA ATRASO</srai></template>
+</category>
+<category>
+    <pattern>* PAGAMENTO * ATRASO</pattern>
+    <template><srai>DIVIDA ATRASO</srai></template>
+</category>
+<category>
+    <pattern>* PAGAMENTO * ATRASO *</pattern>
+    <template><srai>DIVIDA ATRASO</srai></template>
+</category>
+<category>
+    <pattern>* DIVIDA * ATRASO</pattern>
+    <template><srai>DIVIDA ATRASO</srai></template>
+</category>
+<category>
+    <pattern>* DIVIDA * ATRASO *</pattern>
+    <template><srai>DIVIDA ATRASO</srai></template>
+</category>
+
+
+<!-- Prazo de Entrega -->
+<category>
+    <pattern>* PRAZO * ENTREGA</pattern>
+    <template><srai>PRAZO ENTREGA</srai></template>
+</category>
+<category>
+    <pattern>* PRAZO * ENTREGA *</pattern>
+    <template><srai>PRAZO ENTREGA</srai></template>
+</category>
+
+
+<!-- Montagem de Moveis -->
+<category>
+    <pattern>* MONTAGEM * PRODUTO</pattern>
+    <template><srai>MONTAGEM PRODUTO</srai></template>
+</category>
+<category>
+    <pattern>* MONTAGEM * PRODUTO *</pattern>
+    <template><srai>MONTAGEM PRODUTO</srai></template>
+</category>
+
+
+<!-- Quem Realiza a montagem do meu produto -->
+<category>
+    <pattern>QUEM * MONTAGEM * PRODUTO</pattern>
+    <template><srai>QUEM MONTAGEM PRODUTO</srai></template>
+</category>
+<category>
+    <pattern>QUEM * MONTAGEM * PRODUTO *</pattern>
+    <template><srai>QUEM MONTAGEM PRODUTO</srai></template>
+</category>
+<category>
+    <pattern>QUEM MONTAGEM * PRODUTO *</pattern>
+    <template><srai>QUEM MONTAGEM PRODUTO</srai></template>
+</category>
+<category>
+    <pattern>QUEM MONTAGEM * PRODUTO</pattern>
+    <template><srai>QUEM MONTAGEM PRODUTO</srai></template>
+</category>
+
+
+<!-- Ha cobrança para o serviço de montagem -->
+<category>
+    <pattern>* COBRANÇA * MONTAGEM</pattern>
+    <template><srai>COBRANÇA MONTAGEM</srai></template>
+</category>
+<category>
+    <pattern>* COBRANÇA * MONTAGEM *</pattern>
+    <template><srai>COBRANÇA MONTAGEM</srai></template>
+</category>
+<category>
+    <pattern>COBRANÇA * MONTAGEM</pattern>
+    <template><srai>COBRANÇA MONTAGEM</srai></template>
+</category>
+<category>
+    <pattern>COBRANÇA * MONTAGEM *</pattern>
+    <template><srai>COBRANÇA MONTAGEM</srai></template>
+</category>
+
+
+<!-- Como funciona o fluxo de montagem -->
+<category>
+    <pattern>* FLUXO * MONTAGEM</pattern>
+    <template><srai>FLUXO MONTAGEM</srai></template>
+</category>
+<category>
+    <pattern>* FLUXO * MONTAGEM *</pattern>
+    <template><srai>FLUXO MONTAGEM</srai></template>
+</category>
+<category>
+    <pattern>FLUXO * MONTAGEM</pattern>
+    <template><srai>FLUXO MONTAGEM</srai></template>
+</category>
+<category>
+    <pattern>FLUXO * MONTAGEM *</pattern>
+    <template><srai>FLUXO MONTAGEM</srai></template>
+</category>
+
+
+
+<!-- Quando o Montador é acionado para montar meu produto-->
+<category>
+    <pattern>QUANDO * MONTADOR</pattern>
+    <template><srai>QUANDO MONTADOR</srai></template>
+</category>
+<category>
+    <pattern>QUANDO * MONTADOR *</pattern>
+    <template><srai>QUANDO MONTADOR</srai></template>
+</category>
+
+
+<!-- Quando o Montador é acionado para montar meu produto-->
+<category>
+    <pattern>* AGENDAR *</pattern>
+    <template><srai>AGENDAR <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>AGENDAR * MONTADOR</pattern>
+    <template><srai>AGENDAR MONTAGEM</srai></template>
+</category>
+<category>
+    <pattern>AGENDAR * MONTADOR *</pattern>
+    <template><srai>AGENDAR MONTAGEM</srai></template>
+</category>
+<category>
+    <pattern>AGENDAR * MONTAGEM</pattern>
+    <template><srai>AGENDAR MONTAGEM</srai></template>
+</category>
+<category>
+    <pattern>AGENDAR * MONTAGEM *</pattern>
+    <template><srai>AGENDAR MONTAGEM</srai></template>
+</category>
+
+
+<!-- Posso marcar turno? -->
+<category>
+    <pattern>* MARCAR *</pattern>
+    <template><srai>MARCAR <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>MARCAR * TURNO</pattern>
+    <template><srai>MARCAR TURNO</srai></template>
+</category>
+<category>
+    <pattern>MARCAR * TURNO *</pattern>
+    <template><srai>MARCAR TURNO</srai></template>
+</category>
+
+
+<!-- 2° via dodumento fiscal --> 
+<category>
+    <pattern>* DOCUMENTO *</pattern>
+    <template><srai><star /> DOC <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>* FISCAIS *</pattern>
+    <template><srai><star /> FISCAL <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>* NOTINHA * </pattern>
+    <template><srai><star /> DOC FISCAL <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>* 2° * </pattern>
+    <template><srai><star /> SEGUNDA <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>* SEGUNDA * DOC * FISCAL</pattern>
+    <template><srai>SEGUNDA DOC FISCAL</srai></template>
+</category>
+<category>
+    <pattern>* SEGUNDA * DOC * FISCAL *</pattern>
+    <template><srai>SEGUNDA DOC FISCAL</srai></template>
+</category>
+
+
+<!-- Nossos serviços --> 
+<category>
+    <pattern>* QUAIS * SERVIÇOS </pattern>
+    <template><srai>NOSSOS SERVIÇOS</srai></template>
+</category>
+<category>
+    <pattern>* QUAIS * SERVIÇOS *</pattern>
+    <template><srai>NOSSOS SERVIÇOS</srai></template>
+</category>
+<category>
+    <pattern>QUAIS * SERVIÇOS </pattern>
+    <template><srai>NOSSOS SERVIÇOS</srai></template>
+</category>
+<category>
+    <pattern>QUAIS * SERVIÇOS *</pattern>
+    <template><srai>NOSSOS SERVIÇOS</srai></template>
+</category>
+
+
+<!-- Novas Compras -->
+<category>
+    <pattern>* NOVAS COMPRAS *</pattern>
+    <template><srai>NOVAS COMPRAS</srai></template>
+</category>
+<category>
+    <pattern>* NOVAS * COMPRAS *</pattern>
+    <template><srai>NOVAS COMPRAS</srai></template>
+</category>
+<category>
+    <pattern>* NOVAS COMPRAS </pattern>
+    <template><srai>NOVAS COMPRAS</srai></template>
+</category>
+<category>
+    <pattern>* NOVAS * COMPRAS</pattern>
+    <template><srai>NOVAS COMPRAS</srai></template>
+</category>
+
+
+
+<!-- LIBERAÇAO CREDITO -->
+<category>
+    <pattern>* NOME * SUJO * </pattern>
+    <template><srai>LIBERAÇÃO CRÉDITO</srai></template>
+</category>
+<category>
+    <pattern>* NOME * SUJO</pattern>
+    <template><srai>LIBERAÇÃO CRÉDITO</srai></template>
+</category>
+<category>
+    <pattern>* NOME SUJO * </pattern>
+    <template><srai>LIBERAÇÃO CRÉDITO</srai></template>
+</category>
+<category>
+    <pattern>NOME SUJO *</pattern>
+    <template><srai>LIBERAÇÃO CRÉDITO</srai></template>
+</category>
+<category>
+    <pattern>* LIBERAÇÃO * CRÉDITO </pattern>
+    <template><srai>LIBERAÇÃO CRÉDITO</srai></template>
+</category>
+<category>
+    <pattern>* LIBERAÇÃO * CRÉDITO *</pattern>
+    <template><srai>LIBERAÇÃO CRÉDITO</srai></template>
+</category>
+<category>
+    <pattern>* LIBERAÇÃO CRÉDITO </pattern>
+    <template><srai>LIBERAÇÃO CRÉDITO</srai></template>
+</category>
+<category>
+    <pattern>* LIBERAÇÃO CRÉDITO *</pattern>
+    <template><srai>LIBERAÇÃO CRÉDITO</srai></template>
+</category>
+
+
+<!-- Perda ou Extravio de Carnê -->
+<category>
+    <pattern>* PERDA CARNÊ *</pattern>
+    <template><srai>PERDA CARNÊ</srai></template>
+</category>
+<category>
+    <pattern>* PERDA * CARNÊ *</pattern>
+    <template><srai>PERDA CARNÊ</srai></template>
+</category>
+<category>
+    <pattern>* PERDA CARNÊ </pattern>
+    <template><srai>PERDA CARNÊ</srai></template>
+</category>
+<category>
+    <pattern>* PERDA * CARNÊ</pattern>
+    <template><srai>PERDA CARNÊ</srai></template>
+</category>
+<category>
+    <pattern>PERDA CARNÊ </pattern>
+    <template><srai>PERDA CARNÊ</srai></template>
+</category>
+<category>
+    <pattern>PERDA * CARNÊ</pattern>
+    <template><srai>PERDA CARNÊ</srai></template>
+</category>
+
+<category>
+    <pattern>PERDA CARNÊ *</pattern>
+    <template><srai>PERDA CARNÊ</srai></template>
+</category>
+
+
+<!-- Pagamento do carnê -->
+<category>
+    <pattern>* PAGAMENTO * CARNÊ </pattern>
+    <template><srai>PAGAMENTO CARNÊ</srai></template>
+</category>
+<category>
+    <pattern>* PAGAMENTO * CARNÊ *</pattern>
+    <template><srai>CARNÊ CARNÊ</srai></template>
+</category>
+
+
+<!-- Disk Casas Bahia -->
+<category>
+    <pattern>* TELEFONE *</pattern>
+    <template><srai>CENTRAL ATENDIMENTO</srai></template>
+</category>
+<category>
+    <pattern>* TELEFONE</pattern>
+    <template><srai>CENTRAL ATENDIMENTO</srai></template>
+</category>
+<category>
+    <pattern>TELEFONE *</pattern>
+    <template><srai>CENTRAL ATENDIMENTO</srai></template>
+</category>
+<category>
+    <pattern>* DISK *</pattern>
+    <template><srai>CENTRAL ATENDIMENTO</srai></template>
+</category>
+<category>
+    <pattern>* DISK</pattern>
+    <template><srai>CENTRAL ATENDIMENTO</srai></template>
+</category>
+<category>
+    <pattern>DISK *</pattern>
+    <template><srai>CENTRAL ATENDIMENTO</srai></template>
+</category>
+<category>
+    <pattern>* NÚMERO *</pattern>
+    <template><srai>CENTRAL ATENDIMENTO</srai></template>
+</category>
+<category>
+    <pattern>* NÚMERO</pattern>
+    <template><srai>CENTRAL ATENDIMENTO</srai></template>
+</category>
+<category>
+    <pattern>NÚMERO *</pattern>
+    <template><srai>CENTRAL ATENDIMENTO</srai></template>
+</category>
+
+
+<category>
+   <pattern>*</pattern>
+   <template><random><li>Não sei te responder sobre o que você pesquisou. </li>
+    <li>Desculpe, Não encontrei o que você pesquisou</li>
+    <li>Não sei, me pergunte outra coisa</li>
+    <li>Não encontrei. me desculpa.</li></random></template>
+</category>
+
+
+
+
+
+<!-- ##################################
+		Base de Informações
+     #############################3 -->
+<category>
+    <pattern>COMO PAGAR</pattern>
+    <template>Você pode efetuar seus pagamentos nas Casas Bahia em dinheiro, cartões de débito, cheques, cartões de crédito, para informações mais detalhadas, consulte as bandeiras aceitas diretamente nas nossas lojas.</template>
+</category>
+
+<category>
+    <pattern>JUROS TAXA</pattern>
+    <template>Para pagamentos de parcelas em atraso serão cobrado juros moratórios por dia de atraso, despesas de cobrança e multa moratória, sobre o saldo devedor atualizado. Para maiores informações procure uma de nossas lojas ou entre em contato com a nossa Central de Recuperação de Crédito no telefone: 3003-3500* – Capitais e regiões metropolitanas (0xx11) 3003-3500** – demais Localidades.
+
+Horário de Atendimento: 08h00 às 20h00 de segunda à sábado.
+
+* Telefone fixo: custo de uma ligação local + impostos, conforme o Estado de origem. Celular: Custo da ligação + impostos, de acordo com a operadora.
+
+** Custo de uma ligação interurbana.
+	</template>
+</category>
+
+<category>
+    <pattern>DIVIDA ATRASO</pattern>
+    <template>Para informações sobre carnê em atraso, procure uma de nossas lojas, ou entre em contato com a nossa Central de Recuperação de Crédito no telefone : 3003-3500* – Capitais e regiões metropolitanas (0xx11) 3003-3500** – demais localidades
+
+Horário de Atendimento: 08h00 às 20h00 de segunda à sábado.
+
+* Telefone fixo: custo de uma ligação local + impostos, conforme o Estado de origem. Celular: Custo da ligação + impostos, de acordo com a operadora.
+** Custo de uma ligação interurbana.
+	</template>
+</category>
+
+<category>
+    <pattern>PRAZO ENTREGA</pattern>
+    <template>Você também poderá agendar Data e Turno de entrega do seu produto, para isso no ato da compra converse com o vendedor, ele dará maiores detalhes.
+	</template>
+</category>
+
+<!--- Categoria Montagem de Moveis -->
+<category>
+    <pattern>MONTAGEM PRODUTO</pattern>
+    <template>Ao realizar a compra de Móveis em uma de nossas lojas você já pode contratar o serviço de Montagem.
+</template>
+</category>
+<category>
+    <pattern>QUEM MONTAGEM PRODUTO</pattern>
+    <template>Nossa equipe de montagem. Hoje temos mais de 8.000 profissionais, distribuídos por várias regiões do Brasil.
+</template>
+</category>
+<category>
+    <pattern>COBRANÇA MONTAGEM</pattern>
+    <template>Sim. O Serviço de Montagem possui uma taxa de cobrança que varia de acordo com a quantidade de produtos que necessitem do serviço, com exceção das compras realizadas para montagem nos estados da Paraíba e do Tocantins.
+
+A tabela de valores de montagem está disponível em todas as lojas da marca.
+
+Caso o cliente opte por não pagar a taxa da montagem, não terá direito a montagem do produto realizada pelos profissionais da Casas Bahia.
+Atenção! A contratação da Montagem é opcional. Caso seja realizada por terceiros 
+poderá implicar na perda da garantia, se estiver em desacordo com o manual 
+do produto.
+</template>
+</category>
+<category>
+    <pattern>FLUXO MONTAGEM</pattern>
+    <template>Ao realizar compra de produtos que necessitam de montagem nas lojas da Casas Bahia, você poderá agendá-la com o vendedor de acordo com a sua necessidade. Há a possibilidade de agendamento em data específica ou atendimento automático, de acordo com o prazo de cada Posto de Montagem. Essas informações são visualizadas pelo vendedor no ato da compra. Consulte-o.
+</template>
+</category>
+<category>
+    <pattern>QUANDO MONTADOR</pattern>
+    <template>Depois que a entrega é realizada há uma confirmação no depósito, com isso, o sistema gera um Pedido de Instalação e Montagem (PIM). Com o PIM gerado, você será atendido de acordo com a data programada no momento da compra.
+É importante ter atenção aos produtos que não necessitam de montador, pois mesmo alguns tendo opção de montagem, sua execução é muito simples. Essa informação será fornecida no momento da compra.
+</template>
+</category>
+<category>
+    <pattern>AGENDAR MONTAGEM</pattern>
+    <template>Sim, as lojas físicas da Casas Bahia conseguem marcar datas específicas para montagem, de acordo com a programação no sistema.
+</template>
+</category>
+<category>
+    <pattern>MARCAR TURNO</pattern>
+    <template>Sim, as lojas físicas da Casas Bahia conseguem marcar turnos específicos para montagem, de acordo com a programação no sistema.
+</template>
+</category>
+
+
+<category>
+    <pattern>SEGUNDA DOC FISCAL</pattern>
+    <template>
+    	Nossas lojas são habilitadas a emitir Cupom Fiscal e DANFE (Documento Auxiliar da Nota Fiscal Eletrônica) nas operações de venda. Havendo a necessidade de solicitação de segunda via você pode entrar em contato com o nosso SAC 3003- 8889 ou enviar um e-mail para sac@casasbahia.com.br, se preferir clique aqui e envie o formulário automático, responderemos em até 2 dias úteis no e-mail cadastrado, abaixo destacamos as principais dúvidas:
+</template>
+</category>
+
+
+<category>
+    <pattern>NOSSOS SERVIÇOS</pattern>
+    <template>1. Super Garantia
+
+É um serviço oferecido pelas Casas Bahia que garante o conserto do produto contra defeitos elétricos e mecânicos, que ocorram após o término da garantia do fabricante.
+
+A Super Garantia abrange os seguintes produtos:
+
+2. Super Troca
+
+Linha Branca – fogão, refrigerador, lavadora de roupas, secadora de roupas, lavadora de louças, microndas, freezer, tanquinho, ar condicionado
+Linha Marrom – TV, som, DVD, karaokê, home theather
+Eletroportátil acima de R$ 250,00 – liquidificador, batedeira, cafeteira, ventilador, forno elétrico, grill, torradeira, panela elétrica, máquina de costura, processador, mixer, sanduicheira, fritadeira, faca elétrica, ferro de passar, bebedouro, espremedor de frutas, processador de alimentos, aspirador de pó, chapinha, secador de cabelo
+Informática – computadores, notebooks, netbooks, impressoras, scanners, tablet, monitor
+Telefonia – celulares, secretária eletrônica telefone fixo, telefone sem fio, fax, Nextel
+Fitness – esteira, bicicleta ergométrica
+Móveis – madeira, estofados, colchões e cadeirinhas de bebê
+Este serviço possui cobertura exclusiva para a TROCA de ELETROPORTÁTEIS com até R$ 250,00, tais como batedeira, cafeteira, ventilador, forno elétrico, grill, torradeira, panela elétrica, máquina de costura, processador, mixer, sanduicheira, fritadeira, faca elétrica, ferro de passar entre outros.
+
+Se o produto apresentar defeito comprovado por técnicos, o cliente pode trocá-lo por outro produto igual ou similar. A Super Troca pode ser usada apenas uma vez durante o período de vigência.
+
+3. Proteção Financeira
+
+É um seguro que garante ao Cliente a proteção do financiamento, caso ocorra algum fato imprevisto coberto. Ex: Morte, Desemprego Involuntário sem justa causa e Incapacidade Temporária por Acidente.
+
+Perfil do Segurado: Assalariado com registro em carteira de trabalho no mesmo empregador por mais de 12 meses consecutivos ou profissional liberal autônomo que possa comprovar sua renda e pessoas que não se enquadram em nenhum dos outros dois casos.
+
+Carência: É o período de 31 dias contados a partir da compra e caso haja um desemprego dentro deste período o cliente não terá cobertura para Desemprego.
+
+Franquia: A Franquia para o Assalariado com registro em carteira de trabalho no mesmo empregador por mais de 12 meses é o período de 31 dias a contar da data em que o cliente foi demitido involuntariamente, qualquer parcela que vencer dentro deste período é de responsabilidade do segurado.
+
+A Franquia para o Profissional liberal autônomo que possa comprovar sua renda é o período de 15 dias a contar da data em que ocorreu a Incapacidade Temporária por Acidente, qualquer parcela que vencer dentro deste período é de responsabilidade do segurado.
+
+4. Seguro de Vida Protegida e Premiada
+
+Este Seguro proporciona tranquilidade ao cliente caso ocorra algum imprevisto coberto (morte natural ou acidental). Além do seguro, existem benefícios e coberturas que podem ser utilizados em Vida como: desconto em medicamentos, diárias de internação hospitalar em caso de acidente e sorteios na Capitalização.
+
+5. Multiassistência
+
+Este serviço assiste e ampara pessoas em situação emergencial com o veículo, residência, durante a viagem e no auxílio para a assistência funeral.
+
+Assistência a Veículos: Auto-Socorro após pane; Reboque; Translado; Chaveiro; Troca de pneus; Pane seca; Meio de transporte alternativo; Transporte para recuperação do veículo; Hospedagem; Motorista substituto; Remoção médica inter-hospitalar; Envio de acompanhante; Regresso antecipado em caso de falecimento de parente.
+
+Assistência a Residência: Chaveiro; Mão-de-Obra Hidráulica; Mão-de-Obra Elétrica; Vidraceiro; Limpeza da Residência; Vigilância; Mudança e Guarda-Móveis; Cobertura Provisória de Telhados; Hospedagem; Regresso Antecipado; Recuperação do Veículo
+
+Assistência a Pessoas em Viagens: Remoção Médica Inter-Hospitalar; Transporte e Envio de Familiar; Hospedagem para Familiar; Prolongamento de Estada; Regresso do Usuário Após Alta Hospitalar; Regresso Antecipado em Caso de Falecimento de Parentes; Localização e Envio de Bagagem Extraviada Informação e Envio de Documentos em Caso de Perda ou Roubo
+
+Assistência Funeral: Atendimento Social; Transporte de Familiar para Liberação do Corpo Funeral; Cremação; Sepultamento; Traslado; Transmissão de Mensagens Urgentes
+
+6. Serviço Técnico Pessoal
+
+Auxilia nas dificuldades de instalação e manuseio de alguns produtos: Celulares, Câmeras Digitais, Informática, Periféricos, Home Theater, TV Plasma, LCD e LED e Linha Branca.
+
+HELP CELULAR: Este serviço é utilizado para solucionar as dúvidas do cliente, por telefone e dar suporte necessário como: configuração do equipamento, orientação para softwares com acesso remoto (Smartphone) e suas principais funções.
+
+HELP TELEFONE (Sem Visita) / HELP TELEFONE (Com Visita): Este serviço é utilizado para solucionar as dúvidas, por telefone e dar suporte necessário como: Instalação do equipamento, orientação para utilização de softwares, instalação rede sem fio, ou antivírus.
+
+INSTALAÇÃO TV ATÉ 32” / TV ACIMA DE 32” /HOME THEATER: O cliente tem direito a 1 (uma) visita técnica para instalar a TV na residência. Este serviço também disponibiliza suporte por telefone, para tirar todas as dúvidas de configuração e utilização das principais funções.
+
+</template>
+</category>
+
+<category>
+    <pattern>NOVAS COMPRAS</pattern>
+    <template>Você poderá realizar novas compras com o carnê em andamento, desde que as condições para concedermos um novo crédito sejam atendidas. Procure uma de nossas lojas e não se esqueça de levar seus documentos pessoais.
+</template>
+</category>
+
+<category>
+    <pattern>LIBERAÇÃO CRÉDITO</pattern>
+    <template>Para análise e obtenção de crédito, procure uma de nossas lojas, apresentando os seguintes documentos originais: RG, CPF, Comprovante de Residência e Renda. Sujeito à análise de crédito.
+</template>
+</category>
+
+<category>
+    <pattern>PERDA CARNÊ</pattern>
+    <template>Em caso de extravio ou perda do carnê, procure uma de nossas lojas, com seus documentos pessoais, para impressão da 2ª via.
+</template>
+</category>
+
+<category>
+    <pattern> PAGAMENTO CARNÊ</pattern>
+    <template>O pagamento de seu carnê poderá ser realizado em qualquer uma de nossas lojas ou até a data de vencimento em qualquer agência bancária.
+	</template>
+</category>
+
+<category>
+    <pattern> CENTRAL ATENDIMENTO</pattern>
+    <template>Uma Central de Atendimento para você, onde poderá pedir informações, fazer solicitações e até reclamar quando necessário disponível de Segunda a Sexta-Feira, das 07h30minh às 20h, Sábado das 07h30minh às 20h.
+
+Fone: 3003- 8889. (Capitais e Regiões Metropolitanas)
+
+11 3003 8889 (Demais Localidades)
+    </template>
+</category>
+
+
+</aiml>

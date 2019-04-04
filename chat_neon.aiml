@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <!-- insert your AIML categories here -->
+
+
+
+<!--- 
+investimentos,
+Rendimentos
+Taxas de Transferencia
+Taxas de Empréstimos
+Requisitos para crédito
+e mais duvidas...
+-->
+
+
+
+
+<!-- ###################
+VOCÊ
+    ######################### -->
+
+<category>
+    <pattern>* VOCÊ * </pattern>
+    <template><srai><star /> NEON <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>VOCÊ * </pattern>
+    <template><srai>NEON <star /></srai></template>
+</category>
+<category>
+    <pattern>* VOCÊ</pattern>
+    <template><srai><star /> NEON</srai></template>
+</category>
+
+
+
+<category>
+    <pattern>QUEM VOCÊ </pattern>
+    <template>Sou o chatbot do Banco Neon. Em que posso ajudá-lo?</template>
+</category>
+
+
+<!-- ##################
+    Identificação perguntas 
+    #############################
+-->
+<category>
+    <pattern>* SEGURO * NEON *</pattern>
+    <template><srai>SEGURO NEON</srai></template>
+</category>
+<category>
+    <pattern>* SEGURO * NEON</pattern>
+    <template><srai>SEGURO NEON</srai></template>
+</category>
+<category>
+    <pattern>SEGURO * NEON *</pattern>
+    <template><srai>SEGURO NEON</srai></template>
+</category>
+
+<category>
+    <pattern>* DIFERENÇA * NEON * CARTÃO *</pattern>
+    <template><srai>DIFERENÇA NEON CARTAO</srai></template>
+</category>
+<category>
+    <pattern>* DIFERENÇA * NEON * CARTÃO</pattern>
+    <template><srai>DIFERENÇA NEON CARTAO</srai></template>
+</category>
+<category>
+    <pattern>DIFERENÇA * NEON * CARTÃO *</pattern>
+    <template><srai>DIFERENÇA NEON CARTAO</srai></template>
+</category>
+
+<category>
+    <pattern>* NEON * APENAS * CARTÃO *</pattern>
+    <template><srai>NEON APENAS CARTAO</srai></template>
+</category>
+<category>
+    <pattern>* NEON * APENAS * CARTÃO</pattern>
+    <template><srai>NEON APENAS CARTAO</srai></template>
+</category>
+<category>
+    <pattern>NEON * APENAS * CARTÃO *</pattern>
+    <template><srai>NEON APENAS CARTAO</srai></template>
+</category>
+
+
+<category>
+    <pattern>* VANTAGENS * NEON *</pattern>
+    <template><srai>VANTAGENS NEON</srai></template>
+</category>
+<category>
+    <pattern>* VANTAGENS * NEON</pattern>
+    <template><srai>VANTAGENS NEON</srai></template>
+</category>
+<category>
+    <pattern>VANTAGENS * NEON *</pattern>
+    <template><srai>VANTAGENS NEON</srai></template>
+</category>
+
+
+<category>
+    <pattern>* ATENDIMENTO *</pattern>
+    <template><srai>CENTRAL ATENDIMENTO</srai></template>
+</category>
+<category>
+    <pattern>* ATENDIMENTO</pattern>
+    <template><srai>CENTRAL ATENDIMENTO</srai></template>
+</category>
+<category>
+    <pattern>ATENDIMENTO *</pattern>
+    <template><srai>CENTRAL ATENDIMENTO</srai></template>
+</category>
+
+
+<category>
+    <pattern>* NEON * FUNCIONA  *</pattern>
+    <template><srai>NEON FUNCIONA</srai></template>
+</category>
+<category>
+    <pattern>* NEON * FUNCIONA</pattern>
+    <template><srai>NEON FUNCIONA</srai></template>
+</category>
+<category>
+    <pattern>NEON * FUNCIONA *</pattern>
+    <template><srai>NEON FUNCIONA</srai></template>
+</category>
+
+
+<category>
+    <pattern>* NEON FUNCIONA  *</pattern>
+    <template><srai>NEON FUNCIONA</srai></template>
+</category>
+<category>
+    <pattern>* NEON FUNCIONA</pattern>
+    <template><srai>NEON FUNCIONA</srai></template>
+</category>
+<category>
+    <pattern>NEON FUNCIONA *</pattern>
+    <template><srai>NEON FUNCIONA</srai></template>
+</category>
+
+
+<category>
+    <pattern>* PRECISA * CLIENTE  *</pattern>
+    <template><srai>PRECISA CLIENTE</srai></template>
+</category>
+<category>
+    <pattern>* PRECISA * CLIENTE</pattern>
+    <template><srai>PRECISA CLIENTE</srai></template>
+</category>
+<category>
+    <pattern>PRECISA * CLIENTE *</pattern>
+    <template><srai>PRECISA CLIENTE</srai></template>
+</category>
+
+
+<category>
+    <pattern>* ABRIR * CONTA  *</pattern>
+    <template><srai>PRECISA CLIENTE</srai></template>
+</category>
+<category>
+    <pattern>* ABRIR * CONTA</pattern>
+    <template><srai>PRECISA CLIENTE</srai></template>
+</category>
+<category>
+    <pattern>ABRIR * CONTA *</pattern>
+    <template><srai>PRECISA CLIENTE</srai></template>
+</category>
+
+
+<category>
+    <pattern>* ABRIR CONTA  *</pattern>
+    <template><srai>PRECISA CLIENTE</srai></template>
+</category>
+<category>
+    <pattern>* ABRIR CONTA</pattern>
+    <template><srai>PRECISA CLIENTE</srai></template>
+</category>
+<category>
+    <pattern>ABRIR CONTA *</pattern>
+    <template><srai>PRECISA CLIENTE</srai></template>
+</category>
+
+
+<category>
+    <pattern>* DOCUMENTO *</pattern>
+    <template><srai>DOCUMENTO</srai></template>
+</category>
+<category>
+    <pattern>* DOCUMENTO</pattern>
+    <template><srai>DOCUMENTO</srai></template>
+</category>
+<category>
+    <pattern>DOCUMENTO *</pattern>
+    <template><srai>DOCUMENTO</srai></template>
+</category>
+
+
+<category>
+    <pattern>* RENDIMENTO *</pattern>
+    <template><srai>RENDIMENTO</srai></template>
+</category>
+<category>
+    <pattern>* RENDIMENTO</pattern>
+    <template><srai>RENDIMENTO</srai></template>
+</category>
+<category>
+    <pattern>RENDIMENTO *</pattern>
+    <template><srai>RENDIMENTO</srai></template>
+</category>
+
+
+<category>
+    <pattern>* TRANSFERÊNCIA *</pattern>
+    <template><srai>TRANSFERÊNCIA</srai></template>
+</category>
+<category>
+    <pattern>* TRANSFERÊNCIA</pattern>
+    <template><srai>TRANSFERÊNCIA</srai></template>
+</category>
+<category>
+    <pattern>TRANSFERÊNCIA *</pattern>
+    <template><srai>TRANSFERÊNCIA</srai></template>
+</category>
+
+
+<category>
+    <pattern>* TAXA *</pattern>
+    <template><srai>TAXA</srai></template>
+</category>
+<category>
+    <pattern>* TAXA</pattern>
+    <template><srai>TAXA</srai></template>
+</category>
+<category>
+    <pattern>TAXA *</pattern>
+    <template><srai>TAXA</srai></template>
+</category>
+
+
+
+
+<category>
+    <pattern>* TAXA * COBRADA  *</pattern>
+    <template><srai>TAXA COBRADA</srai></template>
+</category>
+<category>
+    <pattern>* TAXA * COBRADA</pattern>
+    <template><srai>TAXA COBRADA</srai></template>
+</category>
+<category>
+    <pattern>TAXA * COBRADA *</pattern>
+    <template><srai>TAXA COBRADA</srai></template>
+</category>
+
+
+<category>
+    <pattern>* TAXA COBRADA  *</pattern>
+    <template><srai>TAXA COBRADA</srai></template>
+</category>
+<category>
+    <pattern>* TAXA COBRADA</pattern>
+    <template><srai>TAXA COBRADA</srai></template>
+</category>
+<category>
+    <pattern>TAXA COBRADA *</pattern>
+    <template><srai>TAXA COBRADA</srai></template>
+</category>
+
+<!-- #############################
+	Resposta Default
+################################## -->
+<category>
+	<pattern>*</pattern>
+	<template>
+		<random>
+			<li>Me desculpe, Não temos a informação que você procura</li>
+			<li>Me desculpe, Eu não sei te responder sobre isso</li>
+			<li>Me perdoa, Procurei no meu sistema e não encontrei nada</li>
+			<li>Deu tela azul com a sua pergunta</li>
+			<li>Não entendi, mas eu respondo as perguntas gerais sobre o Banco Neon, como funcional e tals.</li>
+			<li>Não entendi, tente perguntar de outra maneira.</li>
+		</random>
+	</template>
+</category>
+
+
+
+<!-- #################### 
+Banco de Informações do Banco
+####################### -->
+<category>
+    <pattern>SEGURO NEON</pattern>
+    <template>Muito seguro! O Neon foi criado com a melhor tecnologia de segurança que existe e ainda temos a aprovação do Banco Central, ou seja, estamos de acordo com as mesmas normas de segurança dos bancos tradicionais. Para completar, nossos cartões carregam a bandeira da Visa, o que dá, logo de cara, um voto de confiança para nosso banco.
+	</template>
+</category>
+
+<category>
+    <pattern>DIFERENÇA NEON CARTAO</pattern>
+    <template>O Neon não é um cartão de crédito! Somos mais que isso. Somos um banco, um banco diferente e totalmente digital. O Neon não tem anuidade e não oferece risco algum de endividamento. Você sempre saberá quanto gastou e quanto ainda pode gastar! Sua conta Neon ainda pode funcionar perfeitamente bem com um cartão de crédito que você já possui. :)
+	</template>
+</category>
+
+<category>
+    <pattern>NEON APENAS CARTAO</pattern>
+    <template>
+Não! O Neon é muito mais que um cartão. Somos um banco. Com uma conta Neon você pode fazer pagamentos, transferências, receber grana via boletos e ainda usar seu cartão de débito em qualquer lugar do mundo. Tudo isso sem cobrar taxas absurdas, filas e sem aquela papelada e burocracia que os bancos antigos costumam ter.
+	</template>
+</category>
+
+<category>
+    <pattern>VANTAGENS NEON</pattern>
+    <template>
+Os bancos tradicionais querem que tudo continue como está, afinal, eles estão ganhando mais dinheiro que nunca! Nós queremos revolucionar o serviço que um banco oferece.
+
+O Neon é o banco para quem não quer perder tempo com bancos, ou seja, pra quem sabe o que quer! Ser jovem é não ter medo de mudar e, por isso, somos um banco para os jovens. Não temos medo de mudar, de deixar coisas ultrapassadas realmente pra trás. Prometemos um atendimento de qualidade, do jeito que você merece, com zero enrolação, sem burocracia e sem letrinhas miúdas.
+
+Não tenha medo de mudar. E mude para o Neon.
+	</template>
+</category>
+
+
+<category>
+    <pattern>CENTRAL ATENDIMENTO</pattern>
+    <template>
+Estamos sempre no seu bolso! Você pode tirar suas dúvidas ou conversar com a gente no chat do app Neon.
+
+Também estamos no Facebook, Instagram, Twitter, LinkedIn e Medium!
+
+Se preferir mandar um e-mail: oi@banconeon.com.br
+
+Prefere ligar? Nosso número é: 0800 326 0844.
+	</template>
+</category>
+
+
+<category>
+    <pattern>NEON FUNCIONA</pattern>
+    <template>
+O Neon é simples, não tem enrolação! Você baixa o app, faz o seu cadastro e abre sua conta. Depois disso é só usar o nosso aplicativo pra administrar sua conta e finanças pessoais. Você nunca vai precisar ir até o nosso escritório, entrar em filas ou enviar documentos pelo correio.
+
+Queremos mudar o status do seu relacionamento com os bancos de 'complicado' para 'apaixonado'.
+	</template>
+</category>
+
+<category>
+    <pattern>PRECISA CLIENTE</pattern>
+    <template>
+Abrir uma conta é fácil. Você precisa de um celular Android ou iOS com câmera frontal, ser maior de 18 anos e ter um CPF válido. Tá com tudo na mão? Agora é só se cadastrar! Vamos analisar seu cadastro e, assim que ele for aprovado, avisaremos você via app.
+
+Para ativar a sua conta você precisa fazer um depósito de R$ 100,00 ou mais. Com isso feito, vamos enviar o seu cartão Neon e você estará pronto para experimentar um banco novo, criado para você.
+	</template>
+</category>
+
+
+<category>
+    <pattern>DOCUMENTO</pattern>
+    <template>
+Parece pegadinha, mas não é! Você precisa só do RG ou CNH para se cadastrar.
+	</template>
+</category>
+
+
+<category>
+    <pattern>RENDIMENTO</pattern>
+    <template>
+Pra sua grana render, você precisa criar um "Objetivo". O dinheiro que você destina pra esse objetivo será aplicado em Certificado de Depósito Bancário (CDB) do Neon. Além de render mais que uma poupança comum, um Objetivo é uma ótima forma de você guardar dinheiro.
+	</template>
+</category>
+
+
+
+<category>
+    <pattern>TRANSFERÊNCIA</pattern>
+    <template>
+Cada conta Neon tem o seu limite de transferências. Você descobrirá o seu quando sua conta for aprovada. E, como sempre, qualquer dúvida é só falar com a gente no nosso atendimento 24 horas.
+	</template>
+</category>
+
+
+<category>
+    <pattern>TAXA</pattern>
+    <template>
+Somos transparentes! Tiramos todas as taxas e burocracias que conseguimos, mas algumas delas ainda são do Banco Central ou parceiros do Neon. Nosso plano é diminuir cada vez mais o valor dessas taxas, mas para isso ainda precisamos crescer um pouco. Abaixo você confere todas as taxas que cobramos (e não cobramos) de você:
+
+Abertura de conta: 0
+Manutenção de conta: 0
+Encerramento de conta: 0
+Emissão do cartão: 0
+Anuidade do cartão: 0
+Transferências entre contas neon: 0
+Uma transferência por mês para outros bancos: 0
+Demais transferências para outros bancos: R$ 3,50
+Um saque por mês na Rede 24h: 0
+Demais saques na Rede 24h: R$ 6,90
+1º depósito via boleto do mês: 0
+Demais depósitos via boleto: R$ 2,50
+Compras e Saques Internacionais: 4% (tarifa de gerenciamento neon) + IOF + custo saque Rede Plus (taxa variável)
+	</template>
+</category>
+
+
+<category>
+    <pattern>TAXA COBRADA</pattern>
+    <template>
+Todas as taxas de transações nacionais são cobradas junto com a operação que você estiver fazendo. Tudo na hora! Além disso, elas são classificados da mesma maneira, caso queira, você pode ver apenas o que gastou com taxas em um determinado período. Tudo para facilitar o seu controle e deixar mais transparente a sua relação com o seu dinheiro e com o neon!
+
+Transações internacionais funcionam de forma diferente. O câmbio válido é o do dia em que ocorre a confirmação do pagamento da compra. Essa confirmação pode levar até 7 dias para acontecer. Na hora da sua compra vamos debitar o V1 (valor da compra + câmbio do dia da compra + 4% da tarifa Neon + IOF). No dia da confirmação do pagamento o valor é atualizado para V2 (valor da compra + câmbio do dia da confirmação de pagamento + 4% da tarifa Neon + IOF).
+
+Resumindo: O V1 é debitado na hora para facilitar o seu controle financeiro. O V2 é uma atualização do valor da sua compra de acordo com o câmbio do dia da confirmação de pagamento. Ah, o V2 sempre será o valor final da sua transação."
+	</template>
+</category>
+
+</aiml>

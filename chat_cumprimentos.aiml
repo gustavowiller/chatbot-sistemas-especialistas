@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <!-- insert your AIML categories here -->
+
+
+<!-- Identifica Oi -->
+<category>
+    <pattern>* OI *</pattern>
+    <template><srai>OI</srai></template>
+</category>
+<category>
+    <pattern>OI *</pattern>
+    <template><srai>OI</srai></template>
+</category>
+<category>
+    <pattern>* OI</pattern>
+    <template><srai>OI</srai></template>
+</category>
+
+
+<!-- Identifica o cumprimento -->
+<category>
+    <pattern>BLZ *</pattern>
+    <template><srai>TUDO BEM</srai></template>
+</category>
+<category>
+    <pattern>BLZ</pattern>
+    <template><srai>TUDO BEM</srai></template>
+</category>
+<category>
+    <pattern>TUDO BEM *</pattern>
+    <template><srai>TUDO BEM</srai></template>
+</category>
+<category>
+    <pattern>TUDO * BEM</pattern>
+    <template><srai>TUDO BEM</srai></template>
+</category>
+<category>
+    <pattern>TRANQUILO *</pattern>
+    <template><srai>TUDO BEM</srai></template>
+</category>
+<category>
+    <pattern>TRANQUILO</pattern>
+    <template><srai>TUDO BEM</srai></template>
+</category>
+<category>
+    <pattern>BELEZA *</pattern>
+    <template><srai>TUDO BEM</srai></template>
+</category>
+<category>
+    <pattern>BELEZA</pattern>
+    <template><srai>TUDO BEM</srai></template>
+</category>
+<category>
+    <pattern>BÃO *</pattern>
+    <template><srai>TUDO BEM</srai></template>
+</category>
+<category>
+    <pattern>BÃO</pattern>
+    <template><srai>TUDO BEM</srai></template>
+</category>
+
+
+<!-- Identifica agradecimento -->
+<category>
+    <pattern>OBRIGADO *</pattern>
+    <template><srai>OBRIGADO</srai></template>
+</category>
+
+
+<!-- Identifica adeus -->
+<category>
+    <pattern>TCHAU *</pattern>
+    <template><srai>ADEUS</srai></template>
+</category>
+<category>
+    <pattern>TCHAU</pattern>
+    <template><srai>ADEUS</srai></template>
+</category>
+<category>
+    <pattern>ATÉ MAIS</pattern>
+    <template><srai>ADEUS</srai></template>
+</category>
+<category>
+    <pattern>T+</pattern>
+    <template><srai>ADEUS</srai></template>
+</category>
+<category>
+    <pattern>INTÉ</pattern>
+    <template><srai>ADEUS</srai></template>
+</category>
+<category>
+    <pattern>BYE</pattern>
+    <template><srai>ADEUS</srai></template>
+</category>
+<category>
+    <pattern>ATE LOGO</pattern>
+    <template><srai>ADEUS</srai></template>
+</category>
+<category>
+    <pattern>FLW</pattern>
+    <template><srai>ADEUS</srai></template>
+</category>
+<category>
+    <pattern>FALOW</pattern>
+    <template><srai>ADEUS</srai></template>
+</category>
+
+
+<!-- Identifica Quem é você -->
+<category>
+    <pattern>* QUEM * VOCÊ</pattern>
+    <template><srai>QUEM VOCÊ</srai></template>
+</category>
+<category>
+    <pattern>* QUEM * VC</pattern>
+    <template><srai>QUEM VOCÊ</srai></template>
+</category>
+<category>
+    <pattern>* QUEM * VOCE</pattern>
+    <template><srai>QUEM VOCÊ</srai></template>
+</category>
+<category>
+    <pattern>QUEM * VOCÊ</pattern>
+    <template><srai>QUEM VOCÊ</srai></template>
+</category>
+<category>
+    <pattern>QUEM * VC</pattern>
+    <template><srai>QUEM VOCÊ</srai></template>
+</category>
+<category>
+    <pattern>QUEM * VOCE</pattern>
+    <template><srai>QUEM VOCÊ</srai></template>
+</category>
+
+
+<!-- Guardar o nome da pessoa --> 
+<category>
+<pattern>MEU NOME É *</pattern>
+<template>
+  Prazer em conhecê-lo, <set name="name"><star /></set>
+  </template>
+</category>
+
+
+<category>
+  <pattern>QUAL É O SEU NOME</pattern>
+  <template>Meu nome é <bot name="name" /></template>
+</category>
+
+
+
+
+<!--- Tag response --> 
+<category>
+    <pattern>O QUE * DISSE * ÚLTIMO</pattern>
+    <template><request index="1" /></template>
+</category>
+
+
+
+<!-- Comando cumprimentos -->
+<category>
+    <pattern>OI</pattern>
+    <template>
+    	<random>
+    		<li>Oi</li>
+    		<li>Olá</li>
+    		<li>E ae</li>
+    	</random>
+    </template>
+</category>
+
+<category>
+    <pattern>TUDO BEM</pattern>
+	<template>
+    	<random>
+    		<li>Tudo na paz irmão! O que você deseja?</li>
+    		<li>Suave na nave! Diz aí?</li>
+    		<li>Tranquilo como um grilo! O que você quer?</li>
+    		<li>De boa na lagoa! Fala ae, o que você quer?</li>
+    		<li>Tudo! O que você deseja?</li>
+    	</random>
+    </template>
+</category>
+
+<category>
+    <pattern>OBRIGADO</pattern>
+	<template>
+    	<random>
+    		<li>Por nada!</li>
+    		<li>No que precisar estamos ae.</li>
+    		<li>É nóis</li>
+    	</random>
+    </template>
+</category>	
+
+<category>
+    <pattern>ADEUS</pattern>
+	<template>
+    	<random>
+    		<li>Tchau!</li>
+    		<li>Tchau! Volte sempre!</li>
+    		<li>Tchau! Espero que a gente converse mais depois</li>
+			<li>Tchau! Até breve!</li>
+    	</random>
+    </template>
+</category>	
+</aiml>

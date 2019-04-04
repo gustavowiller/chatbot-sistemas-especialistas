@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <!-- insert your AIML categories here -->
+
+
+
+
+<!-- ###########################
+    Resposta de Quem é Você ? 
+############################### -->
+<category>
+    <pattern>QUEM VOCÊ </pattern>
+    <template>Sou o chatbot da TV Globo. Em que posso ajudá-lo?</template>
+</category>
+
+
+<!-- ###################
+    Substituição de Palavras
+    ######################### -->
+<category>
+    <pattern>* PROGRAMAS *</pattern>
+    <template><srai><star /> PROGRAMAÇÃO <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>* PROGRAMAS</pattern>
+    <template><srai><star /> PROGRAMAÇÃO</srai></template>
+</category>
+
+
+
+<!-- ###############################
+    Interação saber sobre a programação
+###################################### -->
+<category>
+    <pattern>* PROGRAMAÇÃO</pattern>
+    <template><srai>QUER PROGRAMAÇÃO </srai></template>
+</category>
+<category>
+    <pattern>PROGRAMAÇÃO</pattern>
+    <template><srai>QUER PROGRAMAÇÃO</srai></template>
+</category>
+<category>
+    <pattern>* PROGRAMAÇÃO *</pattern>
+    <template><srai>PROGRAMAÇÃO <star index="2" /></srai></template>
+</category>
+
+<category>
+    <pattern>QUER PROGRAMAÇÃO</pattern>
+    <template>Ok, você quer saber sobre a Programação. Me diga sobre qual programa você quer saber em apenas uma palavra.</template>
+</category>
+<category>
+    <pattern>*</pattern>
+    <that>OK VOCÊ QUER UMA SABER SOBRE A PROGRAMAÇÃO ME DIGA SOBRE QUAL PROGRAMA VOCÊ QUER SABER EM APENAS UMA PALAVRA</that>
+    <template><srai>PROGRAMAÇÃO <star /></srai></template>
+</category>
+
+
+<!-- ################################
+Interação Programa Popular
+##################################### -->
+<category>
+    <pattern>* PROGRAMA POPULAR</pattern>
+    <template><srai>PROGRAMA POPULAR</srai></template>
+</category>
+<category>
+    <pattern>PROGRAMA POPULAR *</pattern>
+    <template><srai>PROGRAMA POPULAR</srai></template>
+</category>
+<category>
+    <pattern>* PROGRAMA POPULAR *</pattern>
+    <template><srai>PROGRAMA POPULAR</srai></template>
+</category>
+<category>
+    <pattern>PROGRAMA POPULAR</pattern>
+    <template>OK programa Popular: <srai>SUGESTAO POPULAR</srai></template>
+</category>
+
+
+<!-- ###############################
+    Interação Sugestão de Programas
+###################################### -->
+<category>
+    <pattern>* SUGESTÃO</pattern>
+    <template><srai>QUER SUGESTÃO </srai></template>
+</category>
+<category>
+    <pattern>SUGESTÃO</pattern>
+    <template><srai>QUER SUGESTÃO</srai></template>
+</category>
+<category>
+    <pattern>SUGESTÃO *</pattern>
+    <template><srai>QUER SUGESTÃO</srai></template>
+</category>
+<category>
+    <pattern>* SUGESTÃO *</pattern>
+    <template><srai>QUER SUGESTÃO</srai></template>
+</category>
+
+<category>
+    <pattern>QUER SUGESTÃO</pattern>
+    <template>Ok, você quer uma sugestão. Me diga sobre o que você quer assistir em apenas uma palavra.</template>
+</category>
+
+<category>
+    <pattern>*</pattern>
+    <that>OK VOCÊ QUER UMA SUGESTÃO ME DIGA SOBRE O QUE VOCÊ QUER ASSISTIR EM APENAS UMA PALAVRA</that>
+    <template><srai>SUGESTÃO <star /></srai></template>
+</category>
+
+
+
+<!-- O que vocÊ viu por ultimo -->
+<category>
+    <pattern>INTERAGIR</pattern>
+    <template>
+        <random>
+            <li>O Que você viu por último?</li>
+            <li>Qual tema você gosta de assistir?</li>
+            <li>Qual programa você gostaria de saber mais?</li>
+        </random>
+    </template>
+</category>
+<category>
+    <pattern>*</pattern>
+    <that>O QUE VOCÊ VIU POR ÚLTIMO</that>
+    <template>De acordo com o que você viu por último: <srai>VIU <star /></srai></template>
+</category>
+<category>
+    <pattern>*</pattern>
+    <that>QUAL TEMA VOCÊ GOSTA DE ASSISTIR</that>
+    <template>De acordo com o tema que você gosta de assistir: <srai>SUGESTÃO <star /></srai></template>
+</category>
+<category>
+    <pattern>*</pattern>
+    <that>QUAL PROGRAMA VOCÊ GOSTARIA DE SABER MAIS</that>
+    <template><srai>PROGRAMAÇÃO <star /></srai></template>
+</category>
+
+
+<category>
+   <pattern>*</pattern>
+   <template><random><li>Não sei te responder sobre o que você pesquisou. Mas digite "Interagir", para que possamos interagir um pouco a mais!</li>
+    <li>Não encontrei o que você pesquisou</li>
+    <li>Não sei, me pergunte outra coisa</li>
+    <li>Não encontrei. Digite "Interagir" para que possamos conversar um pouco.</li></random></template>
+</category>
+
+
+<!-- ######################
+    Base de Informações sobre a programação
+    ##########################3 -->
+<category>
+    <pattern>PROGRAMAÇÃO HORA UM</pattern>
+    <template>Apresentado por Monalisa Perrone, o telejornal traz os assuntos mais importantes do Brasil e do mundo, da noite anterior, da madrugada e do início da manhã.</template>
+</category>
+
+
+<category>
+    <pattern>PROGRAMAÇÃO COMO SERÁ</pattern>
+    <template>O quadro Quadro ‘Hoje é dia de...’ revela curiosidades da vida de caminhoneiro. No estúdio, Sandra Annenberg conversa com especialista sobre assédio</template>
+</category>
+
+
+<category>
+    <pattern>PROGRAMAÇÃO É DE CASA</pattern>
+    <template>Ana Furtado, André Marques, Cissa Guimarães, Patrícia Poeta, Tiago Leifert e Zeca Camargo comandam programa de variedades das manhãs de sábado, ao vivo.</template>
+</category>
+
+
+<category>
+    <pattern>PROGRAMAÇÃO MG TV</pattern>
+    <template>Telejornal que traz as notíciais locais, mostrando o que acontece na sua região, com prestação de serviço, boletins de trânsito e a previsão do tempo.</template>
+</category>
+
+
+<category>
+    <pattern>PROGRAMAÇÃO GLOBO ESPORTE</pattern>
+    <template>O Globo Esporte atualiza o noticiário esportivo do dia com os destaques do Brasil e do mundo.
+</template>
+</category>
+
+
+<category>
+    <pattern>PROGRAMAÇÃO JORNAL HOJE</pattern>
+    <template>Comece a tarde por dentro das notícias que correm o Brasil e o mundo. Política, economia, educação, problemas urbanos e questões sociais: está tudo no radar dos nossos repórteres e correspondentes internacionais. Apresentação de Dony De Nuccio e Sandra Annenberg.</template>
+</category>
+
+
+<category>
+    <pattern>PROGRAMAÇÃO SAI DE BAIXO</pattern>
+    <template>Com direção de Dennis Carvalho, textos do jornalista Artur Xexéo e redação final de Miguel Falabella, o humorístico volta ao mesmo palco – o Teatro Procópio Ferreira, em São Paulo. Os episódios trazem Caco Antibes (Miguel Falabella), Magda (Marisa Orth), Vavá (Luiz Gustavo), Cassandra (Aracy Balabanian) e Neide Aparecida (Márcia Cabrita).
+</template>
+</category>
+
+
+<category>
+    <pattern>PROGRAMAÇÃO ESTRELAS</pattern>
+    <template>Angélica convoca Gaby Amarantos e Zezé Polessa para acompanharem de perto o plantio e o preparo de um fruto característico da região Norte, o açaí. E ainda tem passeio para conferir a cena musical do Pará.
+    </template>
+</category>
+
+
+<category>
+    <pattern>PROGRAMAÇÃO CALDEIRÃO DO HUCK</pattern>
+    <template>Chef Claude Troisgros participa do ‘Mandando Bem’. No quadro, que tem como proposta ajudar pessoas a potencializarem seus negócios, o público conhece a trajetória de Thiago Ferreira, de 33 anos, morador de Diamantina, Minas Gerais. Sua principal fonte de renda é um carrinho de pipocas e ele ganhará dicas para turbinar seu negócio, com direito a toques do renomado chef francês.</template>
+</category>
+
+
+<category>
+    <pattern>PROGRAMAÇÃO NOVO MUNDO</pattern>
+    <template>Greta tenta disfarçar a morte de Schultz e volta a envenenar Wolfgang. E mais: Piatã conta para Anna sobre suas visões e ela afirma que sabe onde encontrar seu pai.</template>
+</category>
+
+
+<category>
+    <pattern>PROGRAMAÇÃO MG TV 2° EDIÇÃO</pattern>
+    <template>Telejornal que traz as notícias locais, mostrando o que acontece na sua região, com prestação de serviço, boletins de trânsito e a previsão do tempo.</template>
+</category>
+
+
+<category>
+    <pattern>PROGRAMAÇÃO PEGA PEGA</pattern>
+    <template>Júlio e Antônia se beijam. E mais: Luíza decide contar sobre sua investigação para Eric
+</template>
+</category>
+
+<category>
+    <pattern>PROGRAMAÇÃO BOM DIA MINAS</pattern>
+    <template>Telejornal que traz as notíciais locais, mostrando o que acontece na sua região, com prestação de serviço, boletins de trânsito e a previsão do tempo.</template>
+</category>
+
+
+<category>
+    <pattern>PROGRAMAÇÃO BOM DIA BRASIL</pattern>
+    <template>Apresentado por Chico Pinheiro e Ana Paula Araújo, o Bom Dia Brasil leva até você as primeiras notícias do dia, em formato dinâmico, com comentários e análise crítica dos fatos.</template>
+</category>
+
+
+<category>
+    <pattern>PROGRAMAÇÃO MAIS VOCÊ</pattern>
+    <template>Apresentado por Ana Maria Braga, na companhia do papagaio Louro José (Tom Veiga), o programa investe em matérias mais informativas e na prestação de serviços de olho nas atualidades e assuntos que interessam à família como economia popular, saúde e comportamento.</template>
+</category>
+
+
+<category>
+    <pattern>PROGRAMAÇÃO JORNAL NACIONAL</pattern>
+    <template>Apresentado por William Bonner e Renata Vasconcellos, o Jornal Nacional mostra o que acontece de mais importante no Brasil e no mundo.</template>
+</category>
+
+
+<category>
+    <pattern>PROGRAMAÇÃO A FORÇA DO QUERER</pattern>
+    <template>Ritinha insinua a Zeca que Ruyzinho poderia ser seu filho. E tem um momento tocante: Ruy defende Ivan, que fica emocionado com o gesto do irmão
+</template>
+</category>
+
+
+<category>
+    <pattern>PROGRAMAÇÃO ZORRA</pattern>
+    <template>Humorístico aborda questões da sociedade e seus costumes em esquetes rápidos, piadas visuais e muita música. Tem redação final de Marcius Melhem, Celso Taddei e Gabriela Amaral, direção geral de Mauro Farias e direção de núcleo de Maurício Farias.
+</template>
+</category>
+
+
+<category>
+    <pattern>PROGRAMAÇÃO POPSTAR</pattern>
+    <template>Além das apresentações dos finalistas André Frateschi, Claudio Lins, Eduardo Sterblitch, Lucio Mauro Filho, Mariana Rios e Sabrina Parlatore, que disputam o título de ‘PopStar’ na grande final, o show de encerramento da primeira temporada terá a participação de cantores convidados e um time de especialistas de peso.
+</template>
+</category>
+
+
+<category>
+    <pattern>PROGRAMAÇÃO ESPORTE ESPETACULAR</pattern>
+    <template>Bob Burnquist desce a Megarampa no escuro. Ele é um dos grandes nomes do skate mundial que encaram o desafio Megarampa 2017, com transmissão ao vivo. Disputada na Califórnia, a competição deste ano tem o cinema como tema: as manobras são comparadas a efeitos especiais de Hollywood e os atletas são apresentados com figurinos clássicos de cowboys e gângsters.
+</template>
+</category>
+
+
+<category>
+    <pattern>PROGRAMAÇÃO *</pattern>
+    <template>Não temos informação sobre a programação de "<star />". Tente denovo digitando programação e o programa a seguir. Ex: Programação Jornal Nacional.</template>
+</category>
+
+
+
+<!-- ##########################
+    Base de Recomendações baseado no programa visto
+############################# -->
+<category>
+    <pattern>VIU BOM DIA BRASIL</pattern>
+    <template><srai>SUGESTÃO NOTÍCIA</srai></template>
+</category>
+<category>
+    <pattern>VIU JORNAL NACIONAL</pattern>
+    <template><srai>SUGESTÃO NOTÍCIA</srai></template>
+</category>
+<category>
+    <pattern>VIU BOM DIA MINAS</pattern>
+    <template><srai>SUGESTÃO NOTÍCIA</srai></template>
+</category>
+<category>
+    <pattern>VIU JORNAL HOJE</pattern>
+    <template><srai>SUGESTÃO NOTÍCIA</srai></template>
+</category>
+<category>
+    <pattern>VIU MAIS VOCÊ</pattern>
+    <template><srai>SUGESTÃO CULINÁRIA</srai></template>
+</category>
+<category>
+    <pattern>VIU *</pattern>
+    <template><srai>SUGESTÃO <star /></srai></template>
+</category>
+
+
+<!--####################
+    Base de Sugestões baseada em tema
+###################### --> 
+<category>
+    <pattern>SUGESTÃO CULINÁRIA</pattern>
+    <template>Sugiro assistir <random>
+        <li>Mais Você</li>
+        <li>É de casa</li></random></template>
+</category>
+
+<category>
+    <pattern>SUGESTÃO MUSICA</pattern>
+    <template>PopStar</template>
+</category>
+
+<category>
+    <pattern>SUGESTÃO NOTÍCIA</pattern>
+    <template> Sugiro assistir 
+        <random>
+            <li>Jornal Nacional</li>
+            <li>Bom dia Minas</li>
+            <li>Jornal Hoje</li>
+            <li>Bom dia Brasil</li>
+        </random>
+    </template>
+</category>
+
+<category>
+    <pattern>SUGESTÃO ESPORTES</pattern>
+    <template>Sugiro assistir <random>
+        <li>Globo Esporte</li>
+        <li>Esporte Espetacular</li></random></template>
+</category>
+
+<category>
+    <pattern>SUGESTÃO NOVELA</pattern>
+    <template>Sugiro assistir <random>
+        <li>Pega Pega</li>
+        <li>A força do Querer</li>
+        <li>Novo Mundo</li></random></template>
+</category>
+
+<!-- ##########################
+    Programas Poulares
+################################-->
+<category>
+    <pattern>SUGESTÃO POPULAR</pattern>
+    <template>Sugiro assistir <random>
+        <li>Faustão</li>
+        <li>Caldeirão do Huck</li>
+        <li>Jornal Nacional</li>
+        <li>Encontro com Fátima Bernades</li>
+    </random></template>
+</category>
+
+<category>
+<pattern>SUGESTÃO *</pattern>
+    <template>Desculpe, não encontramos sugestão com o tema: "<star />"</template>
+</category>
+
+</aiml>

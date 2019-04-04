@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <!-- insert your AIML categories here -->
+
+
+
+
+<!--- #######################################
+    Redução de Palavras
+########################################### -->
+
+<!-- #######################
+INICIO - Cumprimentos 
+############################ -->
+<category>
+    <pattern>* OLÁ *</pattern>
+    <template><srai><star /> OI <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>OLÁ *</pattern>
+    <template><srai>OI <star /></srai></template>
+</category>
+<category>
+    <pattern>* OLÁ</pattern>
+    <template><srai><star /> OI</srai></template>
+</category>
+<category>
+    <pattern>OLÁ</pattern>
+    <template><srai>OI</srai></template>
+</category>
+
+
+<category>
+    <pattern>* OLA *</pattern>
+    <template><srai><star /> OI <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>OLA *</pattern>
+    <template><srai>OI <star /></srai></template>
+</category>
+<category>
+    <pattern>* OLA</pattern>
+    <template><srai><star /> OI</srai></template>
+</category>
+<category>
+    <pattern>OLA</pattern>
+    <template><srai>OI</srai></template>
+</category>
+
+
+<category>
+    <pattern>* E AE *</pattern>
+    <template><srai><star /> OI <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>E AE *</pattern>
+    <template><srai>OI <star /></srai></template>
+</category>
+<category>
+    <pattern>* E AE</pattern>
+    <template><srai><star /> OI</srai></template>
+</category>
+<category>
+    <pattern>E AE</pattern>
+    <template><srai>OI</srai></template>
+</category>
+
+
+<category>
+    <pattern>* EAE *</pattern>
+    <template><srai><star /> OI <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>EAE *</pattern>
+    <template><srai>OI <star /></srai></template>
+</category>
+<category>
+    <pattern>* EAE</pattern>
+    <template><srai><star /> OI</srai></template>
+</category>
+<category>
+    <pattern>EAE</pattern>
+    <template><srai>OI</srai></template>
+</category>
+
+
+<category>
+    <pattern>* FALA *</pattern>
+    <template><srai><star /> OI <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>FALA *</pattern>
+    <template><srai>OI <star /></srai></template>
+</category>
+<category>
+    <pattern>* FALA</pattern>
+    <template><srai><star /> OI</srai></template>
+</category>
+<category>
+    <pattern>FALA</pattern>
+    <template><srai>OI</srai></template>
+</category>
+<!-- #######################
+FIM - Cumprimentos 
+############################ -->
+
+
+<category>
+    <pattern>* VOCÊS * </pattern>
+    <template><srai><star /> VOCÊ <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>VOCÊS * </pattern>
+    <template><srai>VOCÊ <star /></srai></template>
+</category>
+<category>
+    <pattern>* VOCÊS</pattern>
+    <template><srai><star /> VOCÊ</srai></template>
+</category>
+
+
+<category>
+    <pattern>* VCS * </pattern>
+    <template><srai><star /> VOCÊ <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>VCS * </pattern>
+    <template><srai>VOCÊ <star /></srai></template>
+</category>
+<category>
+    <pattern>* VCS</pattern>
+    <template><srai><star /> VOCÊ</srai></template>
+</category>
+
+
+<category>
+    <pattern>* VC * </pattern>
+    <template><srai><star /> VOCÊ <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>VC * </pattern>
+    <template><srai>VOCÊ <star /></srai></template>
+</category>
+<category>
+    <pattern>* VC</pattern>
+    <template><srai><star /> VOCÊ</srai></template>
+</category>
+
+
+<category>
+    <pattern>* SÓ *</pattern>
+    <template><srai><star /> APENAS <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>SÓ *</pattern>
+    <template><srai>APENAS <star /></srai></template>
+</category>
+<category>
+    <pattern>* SÓ</pattern>
+    <template><srai><star /> APENAS</srai></template>
+</category>
+
+
+<category>
+    <pattern>* CARTAO *</pattern>
+    <template><srai><star /> CARTÃO <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>CARTAO *</pattern>
+    <template><srai>CARTÃO <star /></srai></template>
+</category>
+<category>
+    <pattern>* CARTAO</pattern>
+    <template><srai><star /> CARTÃO</srai></template>
+</category>
+
+
+<category>
+    <pattern>* DIFERENCA *</pattern>
+    <template><srai><star /> DIFERENÇA <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>DIFERENCA *</pattern>
+    <template><srai>DIFERENÇA <star /></srai></template>
+</category>
+<category>
+    <pattern>* DIFERENCA</pattern>
+    <template><srai><star /> DIFERENÇA</srai></template>
+</category>
+
+
+<category>
+    <pattern>* TELEFONE *</pattern>
+    <template><srai><star /> ATENDIMENTO <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>TELEFONE *</pattern>
+    <template><srai>ATENDIMENTO <star /></srai></template>
+</category>
+<category>
+    <pattern>* TELEFONE</pattern>
+    <template><srai><star /> ATENDIMENTO</srai></template>
+</category>
+
+
+<category>
+    <pattern>* EMAIL *</pattern>
+    <template><srai><star /> ATENDIMENTO <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>EMAIL *</pattern>
+    <template><srai>ATENDIMENTO <star /></srai></template>
+</category>
+<category>
+    <pattern>* EMAIL</pattern>
+    <template><srai><star /> ATENDIMENTO</srai></template>
+</category>
+
+
+<category>
+    <pattern>* DOCUMENTOS *</pattern>
+    <template><srai><star /> DOCUMENTO <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>DOCUMENTOS *</pattern>
+    <template><srai>DOCUMENTO <star /></srai></template>
+</category>
+<category>
+    <pattern>* DOCUMENTOS</pattern>
+    <template><srai><star /> DOCUMENTO</srai></template>
+</category>
+
+
+<category>
+    <pattern>* RENDIMENTOS *</pattern>
+    <template><srai><star /> RENDIMENTO <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>RENDIMENTOS *</pattern>
+    <template><srai>RENDIMENTO <star /></srai></template>
+</category>
+<category>
+    <pattern>* RENDIMENTOS</pattern>
+    <template><srai><star /> RENDIMENTO</srai></template>
+</category>
+
+
+<category>
+    <pattern>* RENDE *</pattern>
+    <template><srai><star /> RENDIMENTO <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>RENDE *</pattern>
+    <template><srai>RENDIMENTO <star /></srai></template>
+</category>
+<category>
+    <pattern>* RENDE</pattern>
+    <template><srai><star /> RENDIMENTO</srai></template>
+</category>
+
+<category>
+    <pattern>* TAXAS *</pattern>
+    <template><srai><star /> TAXA <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>TAXAS *</pattern>
+    <template><srai>TAXA <star /></srai></template>
+</category>
+<category>
+    <pattern>* TAXAS</pattern>
+    <template><srai><star /> TAXA</srai></template>
+</category>
+
+
+<category>
+    <pattern>* COBRADAS *</pattern>
+    <template><srai><star /> COBRADA <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>COBRADAS *</pattern>
+    <template><srai>COBRADA <star /></srai></template>
+</category>
+<category>
+    <pattern>* COBRADAS</pattern>
+    <template><srai><star /> COBRADA</srai></template>
+</category>
+
+
+<category>
+    <pattern>* TRANSFERENCIA *</pattern>
+    <template><srai><star /> TRANSFERÊNCIA <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>TRANSFERENCIA *</pattern>
+    <template><srai>TRANSFERÊNCIA <star /></srai></template>
+</category>
+<category>
+    <pattern>* TRANSFERENCIA</pattern>
+    <template><srai><star /> TRANSFERÊNCIA</srai></template>
+</category>
+
+
+<category>
+    <pattern>* TRANSFERENCIAS *</pattern>
+    <template><srai><star /> TRANSFERÊNCIA <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>TRANSFERENCIAS *</pattern>
+    <template><srai>TRANSFERÊNCIA <star /></srai></template>
+</category>
+<category>
+    <pattern>* TRANSFERENCIAS</pattern>
+    <template><srai><star /> TRANSFERÊNCIA</srai></template>
+</category>
+
+
+<category>
+    <pattern>* TRANSFERÊNCIAS *</pattern>
+    <template><srai><star /> TRANSFERÊNCIA <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>TRANSFERÊNCIAS *</pattern>
+    <template><srai>TRANSFERÊNCIA <star /></srai></template>
+</category>
+<category>
+    <pattern>* TRANSFERÊNCIAS</pattern>
+    <template><srai><star /> TRANSFERÊNCIA</srai></template>
+</category>
+
+
+<!-- Easter Egg 
+--> 
+<category>
+    <pattern>TCHEMPS</pattern>
+    <template>Fala Tchemps!</template>
+</category>
+<category>
+    <pattern>TCHAMPS</pattern>
+    <template>Fala Tchemps!</template>
+</category>
+
+
+<category>
+    <pattern>* POPULARES *</pattern>
+    <template><srai><star /> POPULAR <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>POPULARES *</pattern>
+    <template><srai>POPULAR <star /></srai></template>
+</category>
+<category>
+    <pattern>* POPULARES</pattern>
+    <template><srai><star /> POPULAR</srai></template>
+</category>
+
+
+<category>
+    <pattern>* ANA MARIA *</pattern>
+    <template><srai><star /> MAIS VOCÊ <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>ANA MARIA *</pattern>
+    <template><srai>MAIS VOCÊ <star /></srai></template>
+</category>
+<category>
+    <pattern>* ANA MARIA</pattern>
+    <template><srai><star /> MAIS VOCÊ</srai></template>
+</category>
+
+
+<category>
+    <pattern>* SUGERE *</pattern>
+    <template><srai><star /> SUGESTÃO <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>SUGERE *</pattern>
+    <template><srai>SUGESTÃO <star /></srai></template>
+</category>
+<category>
+    <pattern>* SUGERE</pattern>
+    <template><srai><star /> SUGESTÃO</srai></template>
+</category>
+
+
+<category>
+    <pattern>* SUGIRA *</pattern>
+    <template><srai><star /> SUGESTÃO <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>SUGIRA *</pattern>
+    <template><srai>SUGESTÃO <star /></srai></template>
+</category>
+<category>
+    <pattern>* SUGIRA</pattern>
+    <template><srai><star /> SUGESTÃO</srai></template>
+</category>
+
+
+<category>
+    <pattern>* SUGESTAO *</pattern>
+    <template><srai><star /> SUGESTÃO <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>SUGESTAO *</pattern>
+    <template><srai>SUGESTÃO <star /></srai></template>
+</category>
+<category>
+    <pattern>* SUGESTAO</pattern>
+    <template><srai><star /> SUGESTÃO</srai></template>
+</category>
+
+
+<category>
+    <pattern>* INDICA *</pattern>
+    <template><srai><star /> SUGESTÃO <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>INDICA *</pattern>
+    <template><srai>SUGESTÃO <star /></srai></template>
+</category>
+<category>
+    <pattern>* INDICA</pattern>
+    <template><srai><star /> SUGESTÃO</srai></template>
+</category>
+
+
+<category>
+    <pattern>* INDICAÇÃO *</pattern>
+    <template><srai><star /> SUGESTÃO <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>INDICAÇÃO *</pattern>
+    <template><srai>SUGESTÃO <star /></srai></template>
+</category>
+<category>
+    <pattern>* INDICAÇÃO</pattern>
+    <template><srai><star /> SUGESTÃO</srai></template>
+</category>
+
+
+<category>
+    <pattern>* INDICACAO *</pattern>
+    <template><srai><star /> SUGESTÃO <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>INDICACAO *</pattern>
+    <template><srai>SUGESTÃO <star /></srai></template>
+</category>
+<category>
+    <pattern>* INDICACAO</pattern>
+    <template><srai><star /> SUGESTÃO</srai></template>
+</category>
+
+
+<category>
+    <pattern>* RELACÃO *</pattern>
+    <template><srai><star /> RELAÇÃO <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>RELACÃO *</pattern>
+    <template><srai>RELAÇÃO <star /></srai></template>
+</category>
+<category>
+    <pattern>* RELACÃO</pattern>
+    <template><srai><star /> RELAÇÃO</srai></template>
+</category>
+
+
+<category>
+    <pattern>* RELACAO *</pattern>
+    <template><srai><star /> RELAÇÃO <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>RELACAO *</pattern>
+    <template><srai>RELAÇÃO <star /></srai></template>
+</category>
+<category>
+    <pattern>* RELACAO</pattern>
+    <template><srai><star /> RELAÇÃO</srai></template>
+</category>
+
+
+<category>
+    <pattern>* RELAÇAO *</pattern>
+    <template><srai><star /> RELAÇÃO <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>RELAÇAO *</pattern>
+    <template><srai>RELAÇÃO <star /></srai></template>
+</category>
+<category>
+    <pattern>* RELAÇAO</pattern>
+    <template><srai><star /> RELAÇÃO</srai></template>
+</category>
+
+
+<category>
+    <pattern>* RELAÇÃO *</pattern>
+    <template><srai><star /> TEMA <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>RELAÇÃO *</pattern>
+    <template><srai>TEMA <star /></srai></template>
+</category>
+<category>
+    <pattern>* RELAÇÃO</pattern>
+    <template><srai><star /> TEMA</srai></template>
+</category>
+
+
+<category>
+    <pattern>* SOBRE *</pattern>
+    <template><srai><star /> TEMA <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>SOBRE *</pattern>
+    <template><srai>TEMA <star /></srai></template>
+</category>
+<category>
+    <pattern>* SOBRE</pattern>
+    <template><srai><star /> TEMA</srai></template>
+</category>
+
+
+<category>
+    <pattern>* PROGRAMACAO *</pattern>
+    <template><srai><star /> PROGRAMACÃO <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>PROGRAMACAO *</pattern>
+    <template><srai>PROGRAMACÃO <star /></srai></template>
+</category>
+<category>
+    <pattern>* PROGRAMACAO</pattern>
+    <template><srai><star /> PROGRAMACÃO</srai></template>
+</category>
+
+
+<category>
+    <pattern>* PROGRAMAÇAO *</pattern>
+    <template><srai><star /> PROGRAMACÃO <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>PROGRAMAÇAO *</pattern>
+    <template><srai>PROGRAMACÃO <star /></srai></template>
+</category>
+<category>
+    <pattern>* PROGRAMAÇAO</pattern>
+    <template><srai><star /> PROGRAMACÃO</srai></template>
+</category>
+
+
+<category>
+    <pattern>* PROGRAMACÃO *</pattern>
+    <template><srai><star /> PROGRAMACÃO <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>PROGRAMACÃO *</pattern>
+    <template><srai>PROGRAMACÃO <star /></srai></template>
+</category>
+<category>
+    <pattern>* PROGRAMACÃO</pattern>
+    <template><srai><star /> PROGRAMACÃO</srai></template>
+</category>
+
+
+<category>
+    <pattern>* POPULARES *</pattern>
+    <template><srai><star /> POPULAR <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>POPULARES *</pattern>
+    <template><srai>POPULAR <star /></srai></template>
+</category>
+<category>
+    <pattern>* POPULARES</pattern>
+    <template><srai><star /> POPULAR</srai></template>
+</category>
+
+
+<category>
+    <pattern>* CARNE *</pattern>
+    <template><srai><star /> CARNÊ <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>CARNE *</pattern>
+    <template><srai>CARNÊ <star /></srai></template>
+</category>
+<category>
+    <pattern>* CARNE</pattern>
+    <template><srai><star /> CARNÊ</srai></template>
+</category>
+
+
+<category>
+    <pattern>* ATRASADO *</pattern>
+    <template><srai><star /> ATRASO <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>ATRASADO *</pattern>
+    <template><srai>ATRASO <star /></srai></template>
+</category>
+<category>
+    <pattern>* ATRASADO</pattern>
+    <template><srai><star /> ATRASO</srai></template>
+</category>
+
+
+<category>
+    <pattern>* ATRASADA *</pattern>
+    <template><srai><star /> ATRASO <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>ATRASADA *</pattern>
+    <template><srai>ATRASO <star /></srai></template>
+</category>
+<category>
+    <pattern>* ATRASADA</pattern>
+    <template><srai><star /> ATRASO</srai></template>
+</category>
+
+
+<category>
+    <pattern>* PRAZOS *</pattern>
+    <template><srai><star /> PRAZO <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>PRAZOS *</pattern>
+    <template><srai>PRAZO <star /></srai></template>
+</category>
+<category>
+    <pattern>* PRAZOS</pattern>
+    <template><srai><star /> PRAZO</srai></template>
+</category>
+
+
+<category>
+    <pattern>* MOVEIS *</pattern>
+    <template><srai><star /> PRODUTO <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>MOVEIS *</pattern>
+    <template><srai>PRODUTO <star /></srai></template>
+</category>
+<category>
+    <pattern>* MOVEIS</pattern>
+    <template><srai><star /> PRODUTO</srai></template>
+</category>
+
+
+<category>
+    <pattern>* MONTA *</pattern>
+    <template><srai><star /> MONTAGEM <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>MONTA *</pattern>
+    <template><srai>MONTAGEM <star /></srai></template>
+</category>
+<category>
+    <pattern>* MONTA</pattern>
+    <template><srai><star /> MONTAGEM</srai></template>
+</category>
+
+
+<category>
+    <pattern>* CUSTA *</pattern>
+    <template><srai><star /> COBRANÇA <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>CUSTA *</pattern>
+    <template><srai>COBRANÇA <star /></srai></template>
+</category>
+<category>
+    <pattern>* CUSTA</pattern>
+    <template><srai><star /> COBRANÇA</srai></template>
+</category>
+
+
+<category>
+    <pattern>* PROCESSO *</pattern>
+    <template><srai><star /> FLUXO <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>PROCESSO *</pattern>
+    <template><srai>FLUXO <star /></srai></template>
+</category>
+<category>
+    <pattern>* PROCESSO</pattern>
+    <template><srai><star /> FLUXO</srai></template>
+</category>
+
+
+<!-- Casas Bahia -->
+<category>
+    <pattern>* PROCESSO *</pattern>
+    <template><srai><star /> FLUXO <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>* PROCESSO</pattern>
+    <template><srai><star /> FLUXO</srai></template>
+</category>
+<category>
+    <pattern>* SERVIÇO *</pattern>
+    <template><srai><star /> SERVIÇOS <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>* SERVIÇO</pattern>
+    <template><srai><star /> SERVIÇOS</srai></template>
+</category>
+<category>
+    <pattern>* QUAL *</pattern>
+    <template><srai><star /> QUAIS <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>* QUAL</pattern>
+    <template><srai><star /> QUAIS  </srai></template>
+</category>
+<category>
+    <pattern>* LIBERAR *</pattern>
+    <template><srai><star /> LIBERAÇÃO <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>* LIBERAR</pattern>
+    <template><srai><star /> LIBERAÇÃO  </srai></template>
+</category>
+<category>
+    <pattern>* CREDITO *</pattern>
+    <template><srai><star /> CRÉDITO <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>* CREDITO</pattern>
+    <template><srai><star /> CRÉDITO  </srai></template>
+</category>
+<category>
+    <pattern>* PERDI *</pattern>
+    <template><srai><star /> PERDA <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>* PERDI</pattern>
+    <template><srai><star /> PERDA  </srai></template>
+</category>
+<category>
+    <pattern>PERDI *</pattern>
+    <template><srai>PERDA <star /></srai></template>
+</category>
+<category>
+    <pattern>* SUMIU *</pattern>
+    <template><srai><star /> PERDA <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>* SUMIU</pattern>
+    <template><srai><star /> PERDA  </srai></template>
+</category>
+<category>
+    <pattern>SUMIU *</pattern>
+    <template><srai>PERDA <star /></srai></template>
+</category>
+<category>
+    <pattern>* EXTRAVIO *</pattern>
+    <template><srai><star /> PERDA <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>* EXTRAVIO</pattern>
+    <template><srai><star /> PERDA  </srai></template>
+</category>
+<category>
+    <pattern>EXTRAVIO *</pattern>
+    <template><srai>PERDA <star /></srai></template>
+</category>
+<category>
+    <pattern>* ROUBARAM *</pattern>
+    <template><srai><star /> PERDA <star index="2" /></srai></template>
+</category>
+<category>
+    <pattern>* ROUBARAM</pattern>
+    <template><srai><star /> PERDA</srai></template>
+</category>
+<category>
+    <pattern>ROUBARAM *</pattern>
+    <template><srai>PERDA <star /></srai></template>
+</category>
+
+
+
+</aiml>
